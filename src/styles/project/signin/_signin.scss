@@ -1,0 +1,94 @@
+@use "../../foundation" as *;
+
+.p-signin {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    height: calc(100vh - 66px);
+    justify-content: center;
+    align-items: center;
+}
+
+.p-signin__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.p-signin__logo-img {
+    width: 220px;
+}
+
+.p-signin__content-box {
+    width: 1024px;
+    height: auto;
+    padding: 36px 48px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px 0px rgba(30, 30, 30, 0.12);
+    background-color: $white;
+}
+
+.p-signin__item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.p-signin__item {
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.p-signin__item-label {
+    font-size: $fs-text;
+    color: $dark-gray;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.p-signin__item-inputBox {
+    width: 300px;
+    position: relative;
+}
+
+.p-signin__item-input {
+    width: 100%;
+    height: 56px;
+    border: 1px solid $gray;
+    border-radius: 28px;
+    padding: 16px 16px 16px 24px;
+    text-align: left;
+}
+
+.p-signin__item-input-icon {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+
+    &.-hidden {
+        display: none;
+    }
+}
+
+.p-signin__submit {
+    font-size: $fs-medium;
+    width: 112px;
+    height: 48px;
+    margin-right: 16px;
+    color: $white;
+    background-color: $blue;
+
+    &.-disabled {
+        color: $blue;
+        background-color: $pale-blue;
+    }
+}
